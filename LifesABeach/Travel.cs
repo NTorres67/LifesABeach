@@ -6,11 +6,16 @@ namespace LifesABeach
 {
     public class Travel
     {
+        
+        public double size = 0;
+
         //fields
         private string eyeColor;
+        private double shoeSize;
 
         //Properties
         public string EyeColor { get; set; }
+        public double ShoeSize { get; set; }
 
         //Constructor
         public Travel()
@@ -18,18 +23,19 @@ namespace LifesABeach
             //default
         }
 
-        public Travel(string eyeColor)
+        public Travel(string eyeColor, double shoeSize)
         {
-            EyeColor = eyeColor;
+            this.eyeColor = eyeColor;
+            this.shoeSize = shoeSize;
         }
 
         //Method
+        public int value = 0;
         public int Color(string eyeColor)
+
         {
-            int value = 0;
             switch (eyeColor.ToUpper())
             {
-
                 case "BLUE":
                     value = 1;
                     break;
@@ -47,7 +53,53 @@ namespace LifesABeach
                     break;
             }
             return value;
+        }
 
+        
+
+        public double Shoes(double shoeSize, int colorNum)
+        {
+            switch (shoeSize)
+            {
+                case 6.5:
+                    if (colorNum == 1)
+                    {
+                        size = 11;
+                    }
+                    else if (colorNum == 2)
+                    {
+                        size = 12;
+                    }
+                    else if (colorNum == 3)
+                    {
+                        size = 13;
+                    }
+                    else if (colorNum == 4)
+                    {
+                        size = 14;
+                    }
+                    break;
+
+                case 10.5:
+                    if (colorNum == 1)
+                    {
+                        size = 21;
+                    }
+                    else if (colorNum == 2)
+                    {
+                        size = 22;
+                    }
+                    else if (colorNum == 3)
+                    {
+                        size = 23;
+                    }
+                    else if (colorNum == 4)
+                    {
+                        size = 24;
+                    }
+                    break;
+            }
+            return size;
         }
     }
 }

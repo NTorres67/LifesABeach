@@ -7,8 +7,14 @@ namespace LifesABeach
     public class BeachLocations : Travel
     {
 
+        // look at possibly using "base.nnnn();"
+        //{
+        //int value = base.SwitchValue();
+        //GetBeach(value);
+
+
         //Method
-        public void Beaches(int number)
+        public void Beaches(int number)  
         {
             switch (number)
             {
