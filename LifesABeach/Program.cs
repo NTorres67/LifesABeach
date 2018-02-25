@@ -9,6 +9,13 @@ namespace LifesABeach
             string userInput = " ";
             double userShoe = 0;
 
+            Console.WriteLine("");
+            Console.WriteLine("     _\\/_                 |                  _\\/_  ");
+            Console.WriteLine("     /O\\              \\       /              //O\\");
+            Console.WriteLine("      |                 .----.                 |");
+            Console.WriteLine("     _|_______     --  /      \\  --     _______|__ ");
+            Console.WriteLine("              `~^~^~^~^~^~^~^~^~^~^~^~`  ");
+            Console.WriteLine("                 jgs");
 
             Console.WriteLine("Welcome to the Torres Travel Agency where vacations are an adventure.");
             Console.WriteLine("");

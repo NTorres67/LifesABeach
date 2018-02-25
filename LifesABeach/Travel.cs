@@ -7,7 +7,7 @@ namespace LifesABeach
     public class Travel
     {
         
-        public double size = 0;
+        
 
         //fields
         private string eyeColor;
@@ -55,9 +55,9 @@ namespace LifesABeach
             return value;
         }
 
-        
 
-        public double Shoes(double shoeSize, int colorNum)
+        public double size = 0;
+        public double Shoes(double shoeSize, int colorNum)  // int colorNum == return value above
         {
             switch (shoeSize)
             {
