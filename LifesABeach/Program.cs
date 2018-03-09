@@ -35,10 +35,15 @@ namespace LifesABeach
 
             Hotels place = new Hotels();
 
+            RentalCar vehicle = new RentalCar();
+
             Console.Write("You are going to ");
             person.Beaches(person.Color(userInput));//Allowing the 2 methods to talk
-            Console.Write("and staying at the ");
+            Console.Write("staying at the ");
             place.Sleep(place.Shoes(userShoe, person.Color(userInput)));
+            Console.Write("driving around in a ");
+            vehicle.Ride(vehicle.Transport(userShoe, person.Color(userInput)));
+            Console.WriteLine("");
 
         }
     }
